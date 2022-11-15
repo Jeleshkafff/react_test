@@ -12,6 +12,7 @@
   overflow: scroll;
   /* overflow-y: auto; */
   overflow-x: hidden;
+  padding-right: 15px;
 }
 
 .container nav {
@@ -34,4 +35,8 @@
 } */
 .listItem {
   background: white;
+}
+.listItemBl {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.623);
 }

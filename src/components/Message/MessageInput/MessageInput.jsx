@@ -37,7 +37,7 @@ function MessageInput({ message }) {
       <div>
         <EmojiPicker
           onEmojiClick={() => {
-            console.log(searchPlaceholder);
+            //console.log(searchPlaceholder);
           }}
         />
       </div>

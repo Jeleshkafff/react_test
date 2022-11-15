@@ -6,14 +6,20 @@ import MainWindow from "../components/MainWindow/MainWindow";
 // import Example from "../components/Routers/Routers";
 import styles from "./App.module.css";
 import { Route, Routes } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { readThemeMode } from "../models/theme";
 
 function App() {
-  React.useEffect(() => {
-    //Navigate("/")
+  const colorTheme = useSelector((state) => {
+    return state.theme.startTheme;
   });
+  const dispatch = useDispatch();
+  React.useEffect(() => {
+    dispatch(readThemeMode());
+    //Navigate("/")
+  }, []);
   return (
-    <div className={styles.App}>
-      na
+    <div className={colorTheme === "white" ? styles.App : styles.AppBl}>
       <AsideBar />
       {/* <ChatWindow /> */}
       <Routes>

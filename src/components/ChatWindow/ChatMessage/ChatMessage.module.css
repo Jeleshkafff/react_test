@@ -24,6 +24,9 @@
 .nameUser {
   color: black;
 }
+.nameUserBl {
+  color: rgb(183, 214, 255);
+}
 
 .message {
   padding-top: 17px;

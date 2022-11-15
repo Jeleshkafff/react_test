@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import styles from "./ChatMessage.module.css";
@@ -68,6 +69,9 @@ function ChatMessage({
   photo = "",
 }) {
   console.log(href);
+  const colorTheme = useSelector((state) => {
+    return state.theme.startTheme;
+  });
   return (
     <NavLink
       className={({ isActive }) =>
@@ -82,7 +86,13 @@ function ChatMessage({
           </div>
           <div className={styles.infoUser}>
             <div className={styles.nameStatus}>
-              <p className={styles.nameUser}>{nameUser}</p>
+              <p
+                className={
+                  colorTheme === "white" ? styles.nameUser : styles.nameUserBl
+                }
+              >
+                {nameUser}
+              </p>
               <div className={styles.WhatDo}>
                 <img src="" alt="" />
                 <p>{whatDo}</p>

@@ -3,8 +3,8 @@ import ChatHeader from "./ChatHeader";
 import ChatSearch from "./ChatSearch/ChatSearch";
 import ChatMessage from "./ChatMessage";
 
-
 import styles from "./ChatWindow.module.css";
+import { useSelector } from "react-redux";
 
 let arrMessages = [
   {
@@ -26,7 +26,7 @@ let arrMessages = [
     lastMessage: "1 minutes ago",
     voice: "01:15",
     file: 2,
-    photo: 1
+    photo: 1,
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ let arrMessages = [
     messageText: `Cicero famously orated against his political
    opponent Lucius Sergius Catilina.`,
     newMessages: "",
-    photo: 1
+    photo: 1,
   },
   {
     id: 5,
@@ -61,6 +61,9 @@ let arrMessages = [
   },
 ];
 function ChatWindow() {
+  const colorTheme = useSelector((state) => {
+    return state.theme.startTheme;
+  });
   return (
     <div className={styles.container}>
       <ChatHeader />
@@ -77,9 +80,14 @@ function ChatWindow() {
               messageText,
               newMessages,
               file,
-              photo
+              photo,
             }) => (
-              <li key={id} className={styles.listItem}>
+              <li
+                key={id}
+                className={
+                  colorTheme === "white" ? styles.listItem : styles.listItemBl
+                }
+              >
                 <ChatMessage
                   href={"chat/" + id}
                   key={id}

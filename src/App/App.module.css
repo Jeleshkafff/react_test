@@ -2,8 +2,16 @@
 
 body {
   /* overflow: hidden; */
-  background: #eff4ff;
 }
 .App {
+}
+.App {
+  background: #ebebeb;
   display: flex;
+  min-height: 100vh;
+}
+.AppBl {
+  background: #000000e0;
+  display: flex;
+  min-height: 100vh;
 }
