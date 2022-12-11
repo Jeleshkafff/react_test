@@ -1,0 +1,72 @@
+.asideBar {
+  width: 290px;
+  height: 150%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.asideBarBl {
+  width: 290px;
+  height: 150%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(20, 20, 20);
+}
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../../../public/sun.png");
+  /* padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  border: dashed rgba(255, 0, 0, 0);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.btnBl {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../../../public/moon.png");
+  /* padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  border: dashed rgba(255, 0, 0, 0);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* .LogOutBtn {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 94%;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: #707C97;
+} */
+/* .LogOutDiv {
+  position: relative;
+  margin-top: 316px;
+  margin-left: 32px;
+}  */
+/* .LogOutBtn img{
+  margin-left: 38px;
+  margin-right: 21px;
+  vertical-align: middle;
+}
+
+.LogOutBtn p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  vertical-align: middle;
+} */

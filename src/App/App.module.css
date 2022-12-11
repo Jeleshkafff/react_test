@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+body {
+  /* overflow: hidden; */
+}
+.App {
+}
+.App {
+  background: #ebebeb;
+  display: flex;
+  min-height: 100vh;
+}
+.AppBl {
+  background: #000000e0;
+  display: flex;
+  min-height: 100vh;
+}
